@@ -131,7 +131,10 @@ const Orders = () => {
         case 2: // Preparing
           filtered = orders.filter(order => order.status === 'Preparing');
           break;
-        case 3: // Delivered
+        case 3: // Preparing
+          filtered = orders.filter(order => order.status === 'Ready');
+          break;
+        case 4: // Delivered
           filtered = orders.filter(order => order.status === 'Delivered');
           break;
         default:
@@ -216,6 +219,7 @@ const Orders = () => {
           <Tab label="All Orders" />
           <Tab label="Pending" />
           <Tab label="Preparing" />
+          <Tab label="Ready" />
           <Tab label="Delivered" />
         </Tabs>
         

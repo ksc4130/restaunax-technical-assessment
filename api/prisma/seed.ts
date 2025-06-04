@@ -147,7 +147,7 @@ async function main() {
   ];
 
   // Create orders
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < 25; i++) {
     // Select random status, type, address, and customer
     const status = statuses[Math.floor(Math.random() * statuses.length)];
     const type = types[Math.floor(Math.random() * types.length)];

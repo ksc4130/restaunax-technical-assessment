@@ -59,6 +59,8 @@ This will:
 
 - To view the /rest api swagger documentaion [http://localhost:8081/doc](http://localhost:8081/doc)
 
+- To reset database and reseed delete the .seeded file, take down the postgres container, and remove associated volume.
+
 ---
 
 At the root I have provided a variety of additional items for adding new menu items
@@ -109,6 +111,8 @@ At the root I have provided a variety of additional items for adding new menu it
 
 ### **API**
 
+Ideally you run via docker compose this handle creation of development .env files and spinning up a posgres container. Below is a list of commands to spin up the API and frontend manually.
+
 bash  
 CopyEdit  
 `cd api`  
@@ -132,7 +136,7 @@ The seed script creates:
 
 - A variety of menu items (burgers, fries, drinks, etc.)
 
-- 10+ randomized orders linked to those items
+- 25+ randomized orders linked to those items
 
 Location: `api/prisma/seed.ts`  
  Auto-runs on initial compose up if `.seeded` file does not exist.

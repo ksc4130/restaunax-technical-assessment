@@ -235,20 +235,7 @@ export const CreateMenuItemForm: React.FC<CreateMenuItemFormProps> = ({
             </Typography>
           )}
         </Stack>
-        <Typography variant="caption" color="text.secondary" sx={{ mt: 1, display: 'block' }}>
-          Or specify an image path:
-        </Typography>
-        <TextField
-          fullWidth
-          label="Image Path"
-          name="imagePath"
-          value={formData.imagePath}
-          onChange={handleTextChange}
-          margin="normal"
-          disabled={creatingMenuItem || !!selectedImage}
-          helperText="Path to the image file (e.g., /assets/menuIcons/pizza.png)"
-          size="small"
-        />
+        
         {selectedImage && (
           <Box sx={{ mt: 2, textAlign: 'center' }}>
             <img 

@@ -245,6 +245,11 @@ export const OrderProvider: React.FC<OrderProviderProps> = ({ children }) => {
   };
 
   const clearCart = () => {
+    customerInfo.name = '';
+    customerInfo.address = '';
+    customerInfo.type = 'Delivery';
+    customerInfo.promotionCode = '';
+    setDeliveryFee(10);
     setCartItems([]);
   };
 
