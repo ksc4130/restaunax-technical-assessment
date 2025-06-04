@@ -7,6 +7,7 @@ A real-time restaurant order management system featuring a full CRUD backend, a 
 ## ⚙️ Tech Stack
 
 ### Backend (`/api`)
+
 - [TSED](https://tsed.io/): Structured Express framework
 - [Prisma](https://prisma.io/): ORM with PostgreSQL
 - [Socket.IO](https://socket.io/): Real-time data updates
@@ -14,6 +15,7 @@ A real-time restaurant order management system featuring a full CRUD backend, a 
 - [Docker](https://www.docker.com/): Containerized PostgreSQL and Node.js
 
 ### Frontend (`/ux`)
+
 - [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
 - [Material UI](https://mui.com/): UI Components
 - [Zustand](https://github.com/pmndrs/zustand): State Management
@@ -31,12 +33,12 @@ A real-time restaurant order management system featuring a full CRUD backend, a 
 - 📊 Visualizations: order type breakdown, top orders, revenue summary
 - 🖼️ Icon-based menu using assets from `api/assets/menuIcons` not a production solution
 
-
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Docker + Docker Compose
 
 ### Setup
@@ -47,15 +49,15 @@ docker compose up
 
 This will:
 
-* Spin up PostgreSQL
+- Spin up PostgreSQL
 
-* Mount and start the API server (port 8081\)
+- Mount and start the API server (port 8081\)
 
-* Run Prisma migrations and seed data
+- Run Prisma migrations and seed data
 
-* Start the frontend dev server on [http://localhost:5173](http://localhost:5173)
+- Start the frontend dev server on [http://localhost:5173](http://localhost:5173)
 
-* To view the /rest api swagger documentaion [http://localhost:8081/doc](http://localhost:8081/doc)
+- To view the /rest api swagger documentaion [http://localhost:8081/doc](http://localhost:8081/doc)
 
 ---
 
@@ -101,7 +103,6 @@ At the root I have provided a variety of additional items for adding new menu it
 | createdAt   | DateTime     |
 | updatedAt   | DateTime     |
 
-
 ---
 
 ## **🔧 Development Scripts**
@@ -129,9 +130,9 @@ CopyEdit
 
 The seed script creates:
 
-* A variety of menu items (burgers, fries, drinks, etc.)
+- A variety of menu items (burgers, fries, drinks, etc.)
 
-* 10+ randomized orders linked to those items
+- 10+ randomized orders linked to those items
 
 Location: `api/prisma/seed.ts`  
  Auto-runs on initial compose up if `.seeded` file does not exist.
@@ -157,15 +158,15 @@ CopyEdit
 
 ## **🔍 Notable Components**
 
-* `OrderPipeline`: UI for order status updates
+- `OrderPipeline`: UI for order status updates
 
-* `OrderStatusControl`: Inline status update selector
+- `OrderStatusControl`: Inline status update selector
 
-* `OrderTypeDistribution`: Pie chart of pickup vs delivery
+- `OrderTypeDistribution`: Pie chart of pickup vs delivery
 
-* `FinancialSummary`: Total income visualization
+- `FinancialSummary`: Total income visualization
 
-* `TopOrders`: Renders top 5 orders by value
+- `TopOrders`: Renders top 5 orders by value
 
 ---
 
@@ -176,6 +177,7 @@ Here are strategic development areas to expand this project into a full-featured
 ---
 
 ### 👥 User Management & Permissions
+
 - Implement user registration, login, and JWT-based authentication
 - Define roles: Owner, Manager, Server, Cook, Cashier
 - Apply role-based access control (RBAC) to routes and UI
@@ -183,6 +185,7 @@ Here are strategic development areas to expand this project into a full-featured
 ---
 
 ### 🧾 Order & Payment System Enhancements
+
 - Add payment processing
 - Support dine-in, takeout, and delivery-specific logic
 - Introduce table assignment or QR code linking
@@ -192,6 +195,7 @@ Here are strategic development areas to expand this project into a full-featured
 ---
 
 ### 📋 Menu Management Features
+
 - CRUD for categories (e.g., Drinks, Appetizers)
 - Daily specials, availability toggles, and kitchen notes
 - Image and file uploads (S3)
@@ -201,6 +205,7 @@ Here are strategic development areas to expand this project into a full-featured
 ---
 
 ### 🧑‍🍳 Kitchen Display System (KDS)
+
 - Live view for kitchen staff to manage preparation queue
 - Color-coded status updates (e.g., pending → cooking → ready)
 - Order ticket printing support
@@ -208,6 +213,7 @@ Here are strategic development areas to expand this project into a full-featured
 ---
 
 ### 🪙 Inventory & Supply Chain
+
 - Manage stock levels per ingredient or menu item
 - Alert when low stock or expired
 - Track vendor orders and delivery history
@@ -215,6 +221,7 @@ Here are strategic development areas to expand this project into a full-featured
 ---
 
 ### 🧮 Advanced Analytics & Reporting
+
 - Sales by time period, category, and item
 - Order trends and customer frequency
 - Export to CSV/Excel or sync with external accounting tools
@@ -222,6 +229,7 @@ Here are strategic development areas to expand this project into a full-featured
 ---
 
 ### 💬 Notifications & Communication
+
 - Real-time SMS/email notifications for order readiness
 - Staff task assignment or shift notes
 - System logs and audit trails for data changes
@@ -229,6 +237,7 @@ Here are strategic development areas to expand this project into a full-featured
 ---
 
 ### 🌐 Multi-Location Support
+
 - Branch-based data partitioning
 - Shared corporate reports across locations
 - Configurable branding and settings per location
@@ -236,13 +245,12 @@ Here are strategic development areas to expand this project into a full-featured
 ---
 
 ### 🛠️ DevOps & Scaling
+
 - Container orchestration with Kubernetes or ECS
 - CI/CD pipelines (GitHub Actions, GitLab CI, etc.)
 - Monitoring via Grafana, Prometheus, or Datadog
 
 ---
-
-
 
 ## **👤 Author**
 
@@ -251,4 +259,3 @@ Here are strategic development areas to expand this project into a full-featured
  🔗 [https://github.com/ksc4130](https://github.com/ksc4130)
 
 Built for the Restaunax Full-Stack Developer Assessment.
-
