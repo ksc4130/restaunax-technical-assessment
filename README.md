@@ -126,7 +126,7 @@ bash
 CopyEdit  
 `cd ux`  
 `npm run dev              # Start Vite server`  
-`npm run build            # Production build`
+`NODE_OPTIONS=--max-old-space-size=4096 npm run build            # Production build`
 
 ---
 
