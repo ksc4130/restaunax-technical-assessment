@@ -38,14 +38,14 @@ async function main() {
       price: 12.99,
       imagePath: "/public/menuIcons/chicken.png",
       description: "Herb-marinated grilled chicken breast with vegetables",
-      category: "Main Course"
+      category: "Main Courses"
     },
     {
       name: "Premium Steak",
       price: 24.99,
       imagePath: "/public/menuIcons/steak.png",
       description: "Prime cut steak cooked to perfection",
-      category: "Main Course"
+      category: "Main Courses"
     },
     {
       name: "Steak and Cheese Sandwich",
