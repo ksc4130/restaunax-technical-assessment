@@ -5,7 +5,7 @@ const formDataRequest = async <T>(
   method: string = 'POST',
   formData: FormData
 ): Promise<T> => {
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/rest';
   const url = `${API_BASE_URL}${endpoint}`;
   
   const config: RequestInit = {
